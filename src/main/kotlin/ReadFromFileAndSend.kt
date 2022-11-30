@@ -4,7 +4,7 @@ import org.apache.kafka.common.serialization.StringSerializer
 import java.io.File
 import java.util.Properties
 
-private fun createProducer(): Producer<String, String> {
+fun createProducer(): Producer<String, String> {
     val props = Properties()
     props["bootstrap.servers"] = "localhost:9092"
     props["key.serializer"] = StringSerializer::class.java
